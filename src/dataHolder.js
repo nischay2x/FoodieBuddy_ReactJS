@@ -10,5 +10,16 @@ export const contactInfo = {
 }
 
 export const homeData = {
-    'welcomeText' : 'Welcome to the New Era of Everything.'
+    'welcomeText' : 'Welcome to the New Era of Everything.',
+    'works' : [
+        {'displayText' : 'Edu', 'link' : '#'},
+        {'displayText' : 'Scikit', 'link' : '#'},
+        {'displayText' : 'Work', 'link' : '#'},
+        {'displayText' : 'Welfare', 'link' : '#'}
+    ],
+    'clientWords' : [
+        {'name' : 'Naman Mathur', 'company' : 'Soul Esports', 'quote' : 'Luckily friends do ashamed to do suppose. Tried meant mr smile so. Exquisite behaviour as to middleton perfectly.'},
+        {'name' : 'Animesh Singh', 'company' : 'CRED India Limited', 'quote' : 'Chicken no wishing waiting am. Say concerns dwelling graceful six humoured. Whether mr up savings talking an.'},
+        {'name' : 'Elliot Alderson', 'company' : 'F Society', 'quote' : 'Placing assured be if removed it besides on. Far shed each high read are men over day.'}
+    ]
 }

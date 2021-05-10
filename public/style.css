@@ -3,6 +3,9 @@
     width: 100%;
     transition: 0.3s ease-in-out;
 }
+#header{
+    backdrop-filter: blur(3px);
+}
 
 #welcome{ 
     font-weight: bolder;
@@ -103,7 +106,45 @@
     }
 }
 
-.social-links a:hover{
+.social-links a {
+    background: linear-gradient(to top right, blue, red);
+    padding: 0.6rem;
+    border-radius: 50%;
     transition: 0.2s ease-in-out;
-    transform: scale(1.3);
+}
+.social-links a:hover{
+    background: linear-gradient(to bottom left, blue, red);
+    transform: scale(1.2);
+}
+
+.workLinks{
+    padding: 4rem 0;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 10px black;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.workLinks:hover{
+    box-shadow: 0px -5px 20px gray;
+    transition: 0.2s ease-in-out;
+    color: aqua;
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.quotes-wrapper {
+    transition: 0.3s ease-in-out;
+    color: aliceblue;
+    background-size: contain;
+    background-position: center center;
+}
+.changing{
+    transition: 0.3s ease-in-out;
+}
+
+hr {
+    background-color: yellow;
 }

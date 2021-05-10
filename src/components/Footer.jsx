@@ -28,7 +28,6 @@ const Footer = () => {
                     </a>
                 </span>
             </div>
-            <br/>
             <h5>FEEL FREE TO CONTACT US, ANYTIME, ANYWHERE</h5>
             <a href={`tel:${contactInfo.call}`} className='text-white font-weight-bold'>
                 <CallFill size='16'/> {contactInfo.call}
