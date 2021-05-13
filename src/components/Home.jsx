@@ -1,30 +1,15 @@
 import React from 'react';
 
 import background9 from '../images/background9.jpg';
-import quoteBackground from '../images/quoteBackground.svg';
-import quotesBgFar from '../images/quotesBgFar.jpg'
+import randomBg from '../images/randomBg.png'
+import animatedShapes from '../images/animatedShapes.svg';
 
 import { homeData } from '../dataHolder';
-import { useEffect } from 'react';
-import { useState } from 'react';
+
 
 const Home = () => {
 
     const {welcomeText , works, clientWords} = homeData;
-
-    const [client, setClient] = useState(clientWords[0]);
-    var index = 0;
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if(index >= clientWords.length) { index = 0; }
-            setClient(clientWords[index]);
-            index++;
-        }, 4000)
-        return () => {
-            clearInterval(interval);
-        }
-    }, [])
 
     return(
         <main>
@@ -40,7 +25,7 @@ const Home = () => {
                 </div>
             </div> */}
 
-            <div className="d-flex flex-wrap justify-content-center align-items-center my-4 py-2" style={{gap : '1vw' , backgroundImage : `url(${quoteBackground})`, backgroundSize : 'cover'}}>
+            <div className="d-flex flex-wrap justify-content-center align-items-center my-4 py-2" style={{gap : '1vw', backgroundImage : `url(${randomBg})`, backgroundPosition : 'center center', backgroundSize : 'cover'}}>
                 {works.map((work, index) => {return <a href={work.link} 
                     key={index} 
                     className="col-md-2 col-sm-6 col-8 workLinks">
@@ -51,7 +36,20 @@ const Home = () => {
                 } )}
             </div>
 
-            <div className='py-3 px-2' style={{backgroundImage : `url(${quotesBgFar})`, backgroundSize : 'contain'}}>
+
+            <div className="my-4 quotes-wrapper" style={{ backgroundImage: `url(${animatedShapes})` }}>
+                {clientWords.map((item, idx) => {
+                    return (
+                        <div key={idx} className="jumbotron bg-transparent hidden-lg" id={`quote${idx}`}>
+                            <h2 style={{ fontFamily: "'lucida handwriting',cursive", wordSpacing: '3px' }} className='changing'>" {item.quote}"</h2>
+                            <hr width='100%' style={{ height: '1px' }} />
+                            <h5 style={{ fontFamily: "'courier new', monospace", minWidth: 'fit-content', marginLeft: '0.5rem' }} className='changing'>{item.name} / {item.company}</h5>
+                        </div>
+                    )
+                })}
+            </div>
+
+            {/* <div className='py-3 px-2' style={{backgroundImage : `url(${quotesBgFar})`, backgroundSize : 'contain'}}>
                 <h3 style={{fontWeight : 'bold', fontFamily: "'georgia', serif"}} className='changing'>WHAT OUR CLIENTS SAY ?</h3>
                 <br />
                 <div style={{backgroundImage : `url(${quoteBackground})`}} className="jumbotron quotes-wrapper">
@@ -62,7 +60,7 @@ const Home = () => {
                         <h5 style={{fontFamily : "'courier new', monospace", minWidth : 'fit-content', marginLeft : '0.5rem'}} className='changing'>{client.name} / {client.company}</h5>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </main>
     )   

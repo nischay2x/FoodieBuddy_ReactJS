@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-import logo from '../Icons/logo.png'
+import logo from '../Icons/logo.png';
 
 // import { GeoLocateFill, CallFill, MailFill } from "../Icons/bootstrapIcons";
 
@@ -33,12 +33,16 @@ const Header = () => {
 
             <div className={'bg-dark col-md-3 col-sm-5 col-6 ' +sidebar} id="navbar" onBlur={toggleSidebar} style={{height : '100vh', position : 'fixed', zIndex : 1, top : 0}}>
                 <div style={{marginTop : '25%', width : '100%'}} className="text-white d-flex flex-column mx-1 justify-content-between">
-                    <h4 className="nav-items">HOME</h4>
+                    <a href="/">
+                        <h4 className="nav-items">HOME</h4>
+                    </a>
                     <h4 className="nav-items">ABOUT US</h4>
                     <h4 className="nav-items">PORTFOLIO</h4>
                     <h4 className="nav-items">SERVICES</h4>
                     <h4 className="nav-items">CLIENTS</h4>
-                    <h4 className="nav-items">CONTACT</h4>
+                    <a href="/contact">
+                        <h4 className="nav-items">CONTACT</h4>
+                    </a>
                 </div>
                 {/* <div className="text-white text-wrap mt-2 text-warning text-center">
                     <p>

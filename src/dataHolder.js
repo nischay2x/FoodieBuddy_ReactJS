@@ -6,7 +6,8 @@ export const contactInfo = {
     'instagram' : 'https://www.instagram.com/the_newera_foundation/',
     'facebook' : 'https://www.facebook.com/shubhamtiwari1820aary/',
     'youtube' : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
-    'linkedin' : '#'
+    'linkedin' : '#',
+    'whatsapp' : 'https://wa.me/917389162810'
 }
 
 export const homeData = {
