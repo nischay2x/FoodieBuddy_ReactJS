@@ -180,9 +180,17 @@ hr {
 
 .no-underline a {
     text-decoration: none !important; 
+    color: rgb(4, 189, 4);
 }
 
 #contact-form{
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px grey;
     border-radius: 1rem;
+}
+.form-group input, .form-group textarea{
+    outline: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid skyblue;
 }

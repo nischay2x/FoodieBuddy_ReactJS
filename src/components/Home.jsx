@@ -11,6 +11,23 @@ const Home = () => {
 
     const {welcomeText , works, clientWords} = homeData;
 
+    var current = 0; var total = clientWords.length;
+    let prev;
+    
+    function slideShow() {
+        if (current >= total) { current = 0 }
+        if (current === 0) { prev = total-1 }
+        else prev = current-1;
+        // console.log(`quote${current}`);
+        // console.log(prev);
+        document.getElementById(`quote${current}`).classList.replace('hidden-lg', 'expanded-lg');
+            document.getElementById(`quote${prev}`).classList.replace('expanded-lg', 'hidden-lg');
+        current++;
+        setTimeout(slideShow, 6000)
+    }
+    setTimeout(slideShow, 1000); //Giving time to load page
+
+
     return(
         <main>
             <div className="bg-img-big" style={{backgroundImage : `url(${background9})`, backgroundRepeat : 'no-repeat'}}>

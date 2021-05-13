@@ -39,15 +39,6 @@ const Footer = () => {
                 <CallFill size='16'/> {contactInfo.call}
             </a>
             <br />
-            <a href={`mailto:${contactInfo.mail}`} className='text-white'>
-                <MailFill size='16' /> {contactInfo.mail}
-            </a>
-            <br/>
-            <a href={contactInfo.location} className="text-white">
-                <GeoLocateFill size='16'/>
-                {contactInfo.address}
-            </a>
-            <br />
             <span className="m-2 font-weight-bold">© {new Date().getFullYear()}. The New Era Foundation. All Rights Reserved.</span>
         </div>
     )
