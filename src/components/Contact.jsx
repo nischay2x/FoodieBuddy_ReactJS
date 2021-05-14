@@ -1,9 +1,13 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import {contactInfo} from '../dataHolder.js';
+import {MailFill, CallFill} from '../Icons/bootstrapIcons';
 
 const Contact = () => {
+    const pageData = useSelector(state => state.PageHandler);
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -21,6 +25,12 @@ const Contact = () => {
         // e.preventDefault();
     }
 
+    useEffect(() => {
+        if(pageData){
+            setQuery(pageData.query);
+        }
+    }, [pageData]);
+
     return(
         <main className="card-body">
             <div className='mx-4 row justify-content-between' style={{marginTop : '5rem'}}>
@@ -32,20 +42,20 @@ const Contact = () => {
                         <br />
                         <h5>Bhilai (Durg)</h5>
                         <br />
-                        <h6 style={{fontWeight : 'normal'}}>
+                        <h6 style={{fontWeight : 'normal', maxWidth : '8rem'}}>
                             <a href={contactInfo.location}>{contactInfo.address}</a>
                         </h6>
 
                         <br />
                         <br />
 
-                        <h6 style={{fontWeight : 'normal'}}>
+                        <h6 style={{fontWeight : 'normal'}}> <MailFill size='16' />
                             <a href={`mailto:${contactInfo.mail}`}>
                                 {contactInfo.mail}
                             </a>
                         </h6>
                         <br />
-                        <h6 style={{fontWeight : 'normal'}}>
+                        <h6 style={{fontWeight : 'normal'}}> <CallFill size='16' />
                             <a href={`tel:${contactInfo.call}`}>
                                 {contactInfo.call}
                             </a>
@@ -60,10 +70,10 @@ const Contact = () => {
                         <h1 style={{fontFamily : 'sans-serif', fontWeight : 'bolder'}}>Get Quote</h1>
                     </div>
                     <div className='card-body form-group'>
-                        <input type="text" className="form-control my-2" placeholder='Full Name' name='name' onChange={(e) => setName(e.target.value)} required />
-                        <input type="tel" className="form-control my-2" placeholder='Phone Number' name='phone' onChange={(e) => setPhone(e.target.value)}  required />
-                        <input type="email" className="form-control my-2" placeholder='Email' name='email' onChange={(e) => setEmail(e.target.value)} />
-                        <textarea cols="30" rows="5" className="form-control my-2" name='query' onChange={(e) => setQuery(e.target.value)} placeholder='Write Your Query . . .' required></textarea>
+                        <input type="text" className="form-control my-2" placeholder='Full Name' name='name' onChange={(e) => setName(e.target.value)} value={name} required/>
+                        <input type="tel" className="form-control my-2" placeholder='Phone Number' name='phone' onChange={(e) => setPhone(e.target.value)} value={phone} required />
+                        <input type="email" className="form-control my-2" placeholder='Email' name='email' onChange={(e) => setEmail(e.target.value)} value={email} />
+                        <textarea cols="30" rows="5" className="form-control my-2" name='query' onChange={(e) => setQuery(e.target.value)} value={query} placeholder='Write Your Query . . .' required autoFocus></textarea>
                     </div>
 
                     <div className="mx-4 mb-4">

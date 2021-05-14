@@ -31,7 +31,7 @@ const Home = () => {
     return(
         <main>
             <div className="bg-img-big" style={{backgroundImage : `url(${background9})`, backgroundRepeat : 'no-repeat'}}>
-                <div className="bg-transparent pt-5 mx-3">
+                <div className="bg-transparent pt-5">
                     <h1 id="welcome">{welcomeText}</h1>
                 </div>
             </div>

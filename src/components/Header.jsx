@@ -18,11 +18,13 @@ const Header = () => {
             <div className="card-header d-flex justify-content-between align-items-center">
 
                 <div id="company-logo">
-                    <img src={logo} width="110vw" alt="" />
+                    <a href="/">
+                        <img src={logo} width="110vw" alt="" />
+                    </a>
                 </div>
 
                 <div className="d-flex justify-content-between align-items-center" style={{ gap: '3vw' }}>
-                    <button className="btn-md rounded btn-outline-dark" id="navbar-toggle" style={{ zIndex: 3 }} onClick={toggleSidebar}>
+                    <button className="btn-md rounded btn-outline-dark" id="navbar-toggle" style={{ zIndex: 3 }} onClick={toggleSidebar} onBlur={toggleSidebar}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                         </svg>
@@ -36,7 +38,9 @@ const Header = () => {
                     <a href="/">
                         <h4 className="nav-items">HOME</h4>
                     </a>
-                    <h4 className="nav-items">ABOUT US</h4>
+                    <a href="/about-us">
+                        <h4 className="nav-items">ABOUT US</h4>
+                    </a>
                     <h4 className="nav-items">PORTFOLIO</h4>
                     <h4 className="nav-items">SERVICES</h4>
                     <h4 className="nav-items">CLIENTS</h4>

@@ -1,17 +1,17 @@
 //import React from 'react';
 import ReactDom from 'react-dom';
-// import ReducerList from './reducers/index';
+import ReducerList from './reducers/index';
 
 import App from './App';
-// import { createStore, applyMiddleware } from "redux";
-// import { Provider } from "react-redux";
-// import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from 'redux-thunk';
 
-//const store = createStore(ReducerList, applyMiddleware(thunk));
+const store = createStore(ReducerList, applyMiddleware(thunk));
 
 ReactDom.render(
-    //<Provider store={store}>
+    <Provider store={store}>
         <App/>
-    //</Provider>
+    </Provider>
     , document.getElementById('root')
 );

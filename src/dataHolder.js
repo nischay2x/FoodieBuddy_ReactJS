@@ -8,7 +8,7 @@ import weddingCorousel from './images/weddingCorousel.jpg';
 export const contactInfo = { 
     'call' : '+91 8319809996', 
     'mail' : 'contact.newerafoundation@gmail.com',
-    'address' : 'Building No 610 , Street No 8 , Gurunanak Nagar , Vaishali Nagar , Bhilai , C.G',
+    'address' : 'Building No 610, Street No 8, Gurunanak Nagar, Vaishali Nagar, Bhilai, C.G',
     'location' : 'https://maps.google.com/maps?q=vaishali%20nagar%20bhilai',
     'instagram' : 'https://www.instagram.com/the_newera_foundation/',
     'facebook' : 'https://www.facebook.com/shubhamtiwari1820aary/',
@@ -22,7 +22,7 @@ export const homeData = {
     'works' : [
         {'displayText' : 'Edu', 'link' : '#'},
         {'displayText' : 'Scikit', 'link' : '#'},
-        {'displayText' : 'Work', 'link' : '#'},
+        {'displayText' : 'Work', 'link' : '/business'},
         {'displayText' : 'Welfare', 'link' : '#'}
     ],
     'clientWords' : [
@@ -32,30 +32,44 @@ export const homeData = {
     ]
 }
 
-export const businessData = {
+export const worksData = {
     services : [
-        {titleText : 'Digital Advertisment', texts : [`This is a Brand New Way to showcase your brand through social media,
+        {titleText : 'Wedding Carousel', texts : [`Make your Wedding Memorable with us its a one time in a life time spend well to make memories,
+        this package contains Camera & Editing Work .`, `We also provide Decoration , Event Organisation & Locations.`], 
+        bgImg : weddingCorousel, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '1', to : '5', unit : 'Lakh'}},
+
+        {titleText : 'Digital Advertisement', texts : [`This is a Brand New Way to showcase your brand through social media,
         we will gonna make fine add’s upon your brand with new scripts & we
         promote through our online networks most of the time audience use their
         smartphones so the best way to connect with them place your brand in front
-        of their screens & we will help you with that .`], bgImg : digitalAdvertisment, videoLink : ''},
-
-        {titleText : 'Wedding Corousel', texts : [`Make your Wedding Memorable with us its a one time in a life time spend well to make memories,
-        this package contains Camera & Editing Work .`, `We also provide Decoration , Event Organisation & Locations.`], bgImg : weddingCorousel, videoLink : ''},
+        of their screens & we will help you with that .`], 
+        bgImg : digitalAdvertisment, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '15', to : '35', unit : 'k'} },
 
         {titleText : 'Editing & Designing', texts : [`Video Editing , Photo Editing , Unique Frame Designing & Wall Designing
         the things we can do for you at minimum cost . VFX + ANIMATION are the
-        part of our working module.`], bgImg : videoEditing, videoLink : ''},
+        part of our working module.`], bgImg : videoEditing, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '15', to : '35', unit : ''}},
 
         {titleText : 'Event Management', texts : [`All kinds of Event can be managed by us , We are having Dance Choreographer
-        for Sangeet Purpose , Bands for Musical Conserts , Entertainers to entertain the audience .`, `Birthday & Anniversary arrangements on affodable cost with decorations & venue suggestion`],
-        bgImg : eventManagement, videoLink : ''},
+        for Sangeet Purpose , Bands for Musical Conserts , Entertainers to entertain the audience .`, `Birthday & Anniversary arrangements on affodable cost with decorations & venue suggestion.`],
+        bgImg : eventManagement, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '15', to : '35', unit : ''}},
 
         {titleText : 'Shoots & Art Work', texts : [`PHOTO / VIDEO SHOOTS – WEDDING , BIRTHDAY , ANNIVERSARY & MODEL etc.`, `Artistic Sketch , Human Paintings , Animated Paintings , Vector Art etc
-        are also available at affodable cost.`], bgImg : videoShoot, videoLink : ''},
+        are also available at affodable cost.`], bgImg : videoShoot, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '15', to : '35', unit : ''}},
 
         {titleText : 'Design & Development', texts : [`2D – 3D Abstract Designs are there for you. Graphics & Logo Designs that can make you fall in
         love with us.`, `App & Website Designs are for you that can pose some special impact upon your competitors.
-        Website Development is also Available.`], bgImg : graphicDesign, videoLink : ''}
+        Website Development is also Available.`], bgImg : graphicDesign, videoLink : 'https://www.youtube.com/channel/UCAEjfFj9SG_CwlenoHrGEtw',
+        price : { from : '15', to : '35', unit : ''}}
     ]
+}
+
+export const about = {
+    founder : { name : 'Shubham Tiwari', texts : [], socialMedia : { instagram : '', facebook : '', linkedin : ''}},
+    co_founder : { name : '', texts : [], socialMedia : { instagram : '', facebook : '', linkedin : '' }}
+
 }

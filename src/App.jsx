@@ -7,6 +7,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Business from './components/Business';
+import About from './components/About';
 
 
 const App = () => {
@@ -16,12 +18,10 @@ const App = () => {
         <div>
             <Header/>
             <BrowserRouter>
-                <Route exact path='/'>
-                    <Home/>
-                </Route>
-                <Route path='/contact'>
-                    <Contact/>
-                </Route>
+                <Route exact path='/' component={Home}/>
+                <Route path='/contact' component={Contact}/>
+                <Route path='/business' component={Business}/>
+                <Route path='/about-us' component={About}/>
             </BrowserRouter>
             <Footer/>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GeoLocateFill, FacebookLogo, InstagramLogo, YoutubeLogo, LinkedinLogo, CallFill, MailFill } from '../Icons/bootstrapIcons';
+import { FacebookLogo, InstagramLogo, YoutubeLogo, LinkedinLogo, CallFill } from '../Icons/bootstrapIcons';
 import logo from '../Icons/logo.png';
 import {contactInfo} from '../dataHolder.js';
 import { WhatsappLogo } from '../Icons/bootstrapIcons';
@@ -30,7 +30,7 @@ const Footer = () => {
                 </span>
             </div>
 
-            <a href={contactInfo.whatsapp} id="wa-logo">
+            <a href={contactInfo.whatsapp} id="wa-logo" title='WhatsApp'>
                 <WhatsappLogo size='50'/>   
             </a>
 
