@@ -7,8 +7,8 @@ import { WhatsappLogo } from '../Icons/bootstrapIcons';
 
 const Footer = () => {
     return(
-        <div className="py-2 text-center text-white d-flex flex-column align-items-center" style={{backgroundColor : '#4287f5'}}>
-            <div className="jumbotron bg-transparent">
+        <div className="text-center text-white d-flex flex-column align-items-center" style={{backgroundColor : '#4287f5'}}>
+            <div className="jumbotron pt-2 bg-transparent">
                 <img src={logo} alt="" width="400vw" />
                 <br />
                 <span className="d-flex justify-content-center align-items-center social-links" style={{ gap: '1rem' }}>
@@ -34,12 +34,13 @@ const Footer = () => {
                 <WhatsappLogo size='50'/>   
             </a>
 
-            <h5>FEEL FREE TO CONTACT US, ANYTIME, ANYWHERE</h5>
+            <h6>FEEL FREE TO CONTACT US, ANYTIME, ANYWHERE</h6>
             <a href={`tel:${contactInfo.call}`} className='text-white font-weight-bold'>
                 <CallFill size='16'/> {contactInfo.call}
             </a>
             <br />
-            <span className="m-2 font-weight-bold">© {new Date().getFullYear()}. The New Era Foundation. All Rights Reserved.</span>
+            <br />
+            <span className="text-white w-100 py-2" style={{background : 'black'}}>© {new Date().getFullYear()}. The New Era Foundation. All Rights Reserved.</span>
         </div>
     )
 }

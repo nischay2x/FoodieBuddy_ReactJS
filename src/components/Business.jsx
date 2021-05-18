@@ -21,9 +21,9 @@ const Business = () => {
     }
 
     return(
-        <main className='card-body'>
+        <main className='card-body' id='business-main'>
             <div style={{marginTop : '5rem'}}>
-                <div className="jumbotron d-flex justify-content-center bg-warning bg-gradient">
+                <div className="jumbotron d-flex justify-content-center py-5 bg-warning bg-gradient">
                     <h1 style={{fontWeight : 'bold'}}>Business Details</h1>
                 </div>
                 <div>
@@ -36,9 +36,9 @@ const Business = () => {
                                     {service.texts.map((text, ind) => {return <p key={ind} style={{fontSize : 'large'}}>{text}</p>})}
 
                                     <div className="d-flex flex-row-reverse" style={{gap : '1rem'}}>
-                                        <Link to='#' className='btn-outline-warning px-1 rounded' title='Package Info' style={{textDecoration : 'none'}}>
+                                        <a href={`/packages#${service.packageTag}`} className='btn-outline-warning px-1 rounded' title='Package Info' style={{textDecoration : 'none'}}>
                                             <InfoFill size='20'/>
-                                        </Link>
+                                        </a>
 
                                         <a href={service.videoLink} className='btn-outline-danger rounded px-1' title='Watch Sample Video'>
                                             <YoutubeLogo size='30'/>

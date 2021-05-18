@@ -32,13 +32,14 @@ const Contact = () => {
     }, [pageData]);
 
     return(
-        <main className="card-body">
+        <main className="card-body" id='contact-main'>
             <div className='mx-4 row justify-content-between' style={{marginTop : '5rem'}}>
                 <div className="col-md-6 col-sm-10 col-12 no-underline">
-                    <div className="mx-2 mt-4 border-bottom border-success" style={{maxWidth : 'fit-content'}}>
+                    <div className="mt-4" style={{maxWidth : 'fit-content'}}>
                         <h1 style={{fontFamily : 'sans-serif', fontWeight : 'bolder'}}>Reach Us</h1>
+                        <div className='just-line bg-success'></div>
                     </div>
-                    <div className="mx-2 mt-4 mb-5">
+                    <div className="mt-4 mb-5">
                         <br />
                         <h5>Bhilai (Durg)</h5>
                         <br />
@@ -66,8 +67,9 @@ const Contact = () => {
                 </div>
 
                 <form className="col-md-4 col-sm-10 col-12" id='contact-form'>
-                    <div className="mx-4 mt-4 border-bottom border-success" style={{maxWidth : 'fit-content'}}>
+                    <div className="mx-4 mt-4" style={{maxWidth : 'fit-content'}}>
                         <h1 style={{fontFamily : 'sans-serif', fontWeight : 'bolder'}}>Get Quote</h1>
+                        <div className='just-line bg-success'></div>
                     </div>
                     <div className='card-body form-group'>
                         <input type="text" className="form-control my-2" placeholder='Full Name' name='name' onChange={(e) => setName(e.target.value)} value={name} required/>
