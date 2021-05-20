@@ -8,9 +8,10 @@ html{
     width: 100%;
     transition: 0.3s ease-in-out;
 }
+
 #header{
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
 }
 
 #welcome{ 
@@ -20,8 +21,10 @@ html{
 
 .nav-link{
     font-weight: bold;
+    transition: 0.2s ease-in-out;
 }
 .nav-link:hover{
+    transition: 0.2s ease-in-out;
     color: green !important;
 }
 
@@ -62,15 +65,31 @@ html{
 
 
 .social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px skyblue;
     background: linear-gradient(to top right, blue, red);
     padding: 0.6rem;
     border-radius: 50%;
     transition: 0.2s ease-in-out;
 }
 .social-links a:hover{
+    transition: 0.2s ease-in-out;
     background: linear-gradient(to bottom left, blue, red);
     transform: scale(1.2);
 }
+
+#footer-nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+#footer-nav a:hover{
+    color: coral;
+}
+
 .work-links-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +176,9 @@ html{
     #navigation{
         max-width: fit-content;
     }
+    #footer-nav{
+        visibility: hidden;
+    }
 }
 
 
@@ -211,7 +233,7 @@ html{
     height: 3px;
 }
 
-#package{
+#package-main{
     background: linear-gradient(to right top, limegreen, lightgreen);
 }
 #contact-main{
@@ -226,6 +248,6 @@ html{
     background: linear-gradient(to left, pink,rgb(219, 110, 132));
 }
 .profile-wrapper{
-    box-shadow: 0 0 20px lightcoral;
+    box-shadow: 0 0 20px coral;
     border-radius: 5px;
 }

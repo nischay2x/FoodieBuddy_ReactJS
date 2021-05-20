@@ -14,13 +14,14 @@ const Header = () => {
             case '/contact' : document.querySelector('#contact').classList.add('active'); break;
             case '/business' : document.querySelector('#business').classList.add('active'); break;
             case '/portfolio' : document.querySelector('#portfolio').classList.add('active'); break;
+            case '/pricing' : document.querySelector('#pricing').classList.add('active'); break;
             default : break;
         }
     }
     setTimeout(currentLocation, 500);
 
     return(
-        <div className="sticky w-100 border-bottom" style={{ zIndex: 2 }} id="header">
+        <div className="sticky w-100 border-bottom" style={{ zIndex: 3 }} id="header">
 
             <nav className="navbar navbar-expand-lg navbar-light justify-content-between">
 
@@ -39,14 +40,17 @@ const Header = () => {
                         <li className="nav-item">
                             <a href="/" className="nav-link mx-2" id='home'>HOME</a>
                         </li>
-                        <li className='nav-item'>
-                            <a href="/about-us" className='nav-link mx-2' id='about'>ABOUT US</a>
-                        </li>
                         <li className="nav-item">
                             <a href="/contact" className="nav-link mx-2" id='contact'>CONTACT</a>
                         </li>
                         <li className="nav-item">
                             <a href="/business" className="nav-link mx-2" id='business'>BUSINESS</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href="/pricing" className='nav-link mx-2' id='pricing'>PRICING</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href="/about-us" className='nav-link mx-2' id='about'>ABOUT US</a>
                         </li>
                         <li className="nav-item">
                             <a href="/" className="nav-link mx-2" id='portfolio'>PORTFOLIO</a>

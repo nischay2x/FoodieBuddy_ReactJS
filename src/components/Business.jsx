@@ -20,6 +20,15 @@ const Business = () => {
         dispatch(PageHandler(page));
     }
 
+    const handlePackageInfoClick = (packageTag) => {
+        const page = {
+            to : 'pricing',
+            from : 'works',
+            show : packageTag
+        }
+        dispatch(PageHandler(page));
+    }
+
     return(
         <main className='card-body' id='business-main'>
             <div style={{marginTop : '5rem'}}>
@@ -36,9 +45,9 @@ const Business = () => {
                                     {service.texts.map((text, ind) => {return <p key={ind} style={{fontSize : 'large'}}>{text}</p>})}
 
                                     <div className="d-flex flex-row-reverse" style={{gap : '1rem'}}>
-                                        <a href={`/packages#${service.packageTag}`} className='btn-outline-warning px-1 rounded' title='Package Info' style={{textDecoration : 'none'}}>
+                                        <Link to='/pricing' onClick={() => handlePackageInfoClick(service.packageTag)} className='btn-outline-warning px-1 rounded' title='Package Info' style={{textDecoration : 'none'}}>
                                             <InfoFill size='20'/>
-                                        </a>
+                                        </Link>
 
                                         <a href={service.videoLink} className='btn-outline-danger rounded px-1' title='Watch Sample Video'>
                                             <YoutubeLogo size='30'/>

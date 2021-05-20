@@ -13,7 +13,7 @@ const About = () => {
     return(
         <main className='card-body' id='about-main'>
             <div style={{ marginTop: '5rem' }}>
-                <div className="jumbotron bg-dark text-white d-flex flex-wrap align-items-center">
+                <div className="rounded jumbotron mb-5 bg-dark text-white d-flex flex-wrap align-items-center">
                     <div className="col-md-6">
                         <h1>Our Achievements</h1>
                         <p>
@@ -22,11 +22,12 @@ const About = () => {
                         </p>
                         <p>* Listed as TOP 8 in CG Film Festival 2018</p>
                         <p>
-                            <strong>Read : </strong> 
-                            <a href="https://www.deccanchronicle.com/nation/current-affairs/120119/short-film-by-chhattisgarh-kids-win-hearts-in-hosur.html" style={{color : 'cyan'}}>Deccan Chronical</a> 
+                            <strong>Read : &nbsp;</strong>
+                            <a href="https://www.deccanchronicle.com/nation/current-affairs/120119/short-film-by-chhattisgarh-kids-win-hearts-in-hosur.html" style={{color : 'cyan'}}>Deccan Chronicle </a>
                         </p>
                     </div>
                     <div className="col-md-6">
+                        {/* <iframe seamless src="https://www.deccanchronicle.com/nation/current-affairs/120119/short-film-by-chhattisgarh-kids-win-hearts-in-hosur.html" width='100%' height='400' frameBorder="0" id='articleFrame'></iframe> */}
                         <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-m6k3b0b2lqvtci76ecahos92d4-20190112013348.Medi.jpeg" alt="" width='100%' className='rounded'/>
                     </div>
                 </div>

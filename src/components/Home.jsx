@@ -1,8 +1,8 @@
 import React from 'react';
 
 import background9 from '../images/background9.jpg';
-import quotesBgFar from '../images/quotesBgFar.jpg';
-import randomBg from '../images/randomBg.jpg'
+// import quotesBgFar from '../images/quotesBgFar.jpg';
+// import randomBg from '../images/randomBg.jpg'
 // import animatedShapes from '../images/animatedShapes.svg';
 
 import { homeData } from '../dataHolder';

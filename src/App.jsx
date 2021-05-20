@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Business from './components/Business';
 import About from './components/About';
-import Packages from './components/Packages';
+import Pricing from './components/Pricing';
 
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
                     <Route path='/contact' component={Contact}/>
                     <Route path='/business' component={Business}/>
                     <Route path='/about-us' component={About}/>
-                    <Route path='/packages' component={Packages}/>
+                    <Route path='/pricing' component={Pricing}/>
                 </Switch>
             </BrowserRouter>
             <Footer/>
