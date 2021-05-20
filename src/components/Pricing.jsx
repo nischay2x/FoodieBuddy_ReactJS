@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 import { worksData } from '../dataHolder';
+import Package from './Package';
+import { CameraFill } from '../Icons/bootstrapIcons';
 
 const Pricing = () => {
 
@@ -17,50 +19,17 @@ const Pricing = () => {
     // }, [pageData]);
 
     return(
-        <main className='card-body w-100' id='package-main'>
+        <main className='w-100' id='pricing-main'>
             <div style={{paddingTop : '5rem'}}>
 
+                <Package packName='Digital Advertisement' packageTag={services[1].packageTag}/>
 
-                <div className='card'>
-                    <div className='card-header bg-dark text-white text-center'>
-                        <h1>Current Enquired Package</h1>
-                    </div>
-                <div className='row card-body justify-content-center' style={{gap : '1rem'}}>
-                    <div className='col-md-3 jumbotron text-center'>
-                        <h2>&#x20B9; 15,000</h2>
-                        <p>Duration</p>
-                        <div className="just-line bg-dark w-25 mx-auto my-3"></div>
-                        <div>
-                            <li>Work - 1</li>
-                            <li>Work - 2</li>
-                            <li>Work - 3</li>
-                        </div>
-                    </div>
-                    <div className='col-md-3 jumbotron text-center'>
-                        <h2>&#x20B9; 25,000</h2>
-                        <p>Duration</p>
-                        <div className="just-line bg-dark w-25 mx-auto my-3"></div>
-                        <div>
-                            <li>Work - 1</li>
-                            <li>Work - 2</li>
-                            <li>Work - 3</li>
-                        </div>
-                    </div>
-                    <div className='col-md-3 jumbotron text-center'>
-                        <h2>&#x20B9; 35,000</h2>
-                        <p>Duration</p>
-                        <div className="just-line bg-dark w-25 mx-auto my-3"></div>
-                        <div>
-                            <li>Work - 1</li>
-                            <li>Work - 2</li>
-                            <li>Work - 3</li>
-                        </div>
-                    </div>
-                </div>
+                {/* This will be removed */}
+                <div className='pt-3 pb-2 bg-dark border-none text-white text-center'>
+                    <h1 style={{fontFamily : 'Aclonica'}}>Browse Other Packages</h1>
                 </div>
 
-
-                <div className='d-flex flex-wrap mx-2 justify-content-center' id="business-packages">
+                <div className='d-flex flex-wrap border mx-2 justify-content-center' id="business-packages">
                    {services.map((service, idx) => {
                        return(
                            <div key={idx} id={service.packageTag} className='col-md-6 col-sm-6 col-10'>
@@ -75,12 +44,8 @@ const Pricing = () => {
                                        <span className='display-4'>{service.price.to}</span>
                                        <span>{service.price.unit}</span>
                                    </div>
-                                   <div className='mx-3 mb-3'>
-                                       {service.providings.map((providing, idx) => {
-                                           return (
-                                               <li key={idx} style={{listStyle : 'none'}}>{providing}</li>
-                                           )
-                                       })}
+                                   <div>
+                                       <CameraFill size='20'/>
                                    </div>
                                 </div>
                            </div>

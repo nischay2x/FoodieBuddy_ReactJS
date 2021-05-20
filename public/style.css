@@ -75,7 +75,7 @@ html{
     transition: 0.2s ease-in-out;
 }
 .social-links a:hover{
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
     background: linear-gradient(to bottom left, blue, red);
     transform: scale(1.2);
 }
@@ -233,8 +233,8 @@ html{
     height: 3px;
 }
 
-#package-main{
-    background: linear-gradient(to right top, limegreen, lightgreen);
+#pricing-main{
+    background: aliceblue;
 }
 #contact-main{
     background: linear-gradient(to top, lightyellow, yellow);
@@ -250,4 +250,27 @@ html{
 .profile-wrapper{
     box-shadow: 0 0 20px coral;
     border-radius: 5px;
+}
+
+.providings li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.providings{
+    max-width: 75%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+.pack{
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: aliceblue;
+    padding-top: 8vh;
+    box-shadow: 0 3px 5px black;
+    padding-bottom: 8vh;
 }
