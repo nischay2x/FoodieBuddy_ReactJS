@@ -7,8 +7,8 @@ import { WhatsappLogo } from '../Icons/bootstrapIcons';
 
 const Footer = () => {
     return(
-        <div className="text-center text-white d-flex flex-column align-items-center" style={{backgroundColor : '#4287f5'}}>
-            <div className="jumbotron pt-2 bg-transparent">
+        <div className="text-center text-white d-flex flex-column align-items-center" >
+            <div className="jumbotron w-100 mb-0 pt-2" style={{backgroundColor : '#4287f5'}}>
                 <img src={logo} alt="" width="400vw" />
                 <br />
 

@@ -1,7 +1,8 @@
 html{
     scroll-behavior: smooth;
-    transition-delay: 1s;
+    transition-delay: 2s;
 }
+
 
 .sticky{
     position: fixed;
@@ -234,10 +235,10 @@ html{
 }
 
 #pricing-main{
-    background: aliceblue;
+    background: linear-gradient(to right, rgb(0, 238, 255), rgb(0, 174, 255));
 }
 #contact-main{
-    background: linear-gradient(to top, lightyellow, yellow);
+    background: linear-gradient(to right, lightyellow, yellow);
 }
 
 #business-main{
@@ -269,8 +270,12 @@ html{
 .pack{
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
-    color: aliceblue;
     padding-top: 8vh;
     box-shadow: 0 3px 5px black;
     padding-bottom: 8vh;
+}
+#business-packages{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }

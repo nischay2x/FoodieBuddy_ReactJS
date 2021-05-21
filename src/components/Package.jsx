@@ -1,14 +1,14 @@
 import React from 'react';
-import { packages } from '../dataHolder';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { PageHandler } from '../actions/PageHandler';
 
+import { Cursor} from '../Icons/bootstrapIcons';
+
 const Package = (props) => {
 
-    const {packName} = props;
-    const {digitalAdvertisement} = packages;
-    const packs = digitalAdvertisement;
+    const {packName, packs} = props;
+    
     const dispatch = useDispatch();
     const handleEnquire = (type) => {
         const page = {
@@ -27,7 +27,7 @@ const Package = (props) => {
     }
 
     return(
-        <div className='rounded border-none'>
+        <div className='rounded border-none' id='package-wrapper'>
             <div className='pt-3 pb-2 bg-dark border-none text-white text-center'>
                 <h1 style={{fontFamily : 'Aclonica'}}>{packName} Package</h1>
             </div>
@@ -36,10 +36,14 @@ const Package = (props) => {
 
                 {packs.map((pack, idx) => {
                     return(
-                        <div key={idx} className='col-md-3 col-sm-6 col-9 pack'>
+                        <div key={idx} className='col-md-3 col-sm-6 col-9 pack' style={{color : 'aliceblue'}}>
                             <div className='text-center'>
                                 <h1>&#x20B9; {pack.price}</h1>
-                                <p style={{textTransform : 'uppercase', letterSpacing : '5px', marginTop : '1rem'}}>{pack.duration}</p>
+                                {(pack.duration) ? 
+                                    <p style={{textTransform : 'uppercase', letterSpacing : '5px', marginTop : '1rem'}}>{pack.duration}</p>
+                                    :
+                                    <p></p>
+                                }
                             </div>
 
                             <div className="just-line bg-warning w-25 mx-auto mt-2 mb-5"></div>
@@ -57,7 +61,8 @@ const Package = (props) => {
                             
                             <div className='d-flex justify-content-center mt-5' style={enquireBtn}>
                                 <Link to='/contact'>
-                                    <button className="btn-dark rounded btn-lg" onClick={() => handleEnquire(pack.type)}>Enquire</button>
+                                    <button className="btn-dark rounded btn-lg" onClick={() => handleEnquire(pack.type)}>
+                                        <Cursor size='20'/> Enquire</button>
                                 </Link>
                             </div>
                         </div>

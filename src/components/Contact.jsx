@@ -28,6 +28,10 @@ const Contact = () => {
     useEffect(() => {
         if(pageData){
             setQuery(pageData.query);
+            document.querySelector('textarea').focus();
+        } else {
+            document.body.scroll = 0;
+            document.documentElement.scrollTop = 0;
         }
     }, [pageData]);
 
@@ -75,7 +79,7 @@ const Contact = () => {
                         <input type="text" className="form-control my-2" placeholder='Full Name' name='name' onChange={(e) => setName(e.target.value)} value={name} required/>
                         <input type="tel" className="form-control my-2" placeholder='Phone Number' name='phone' onChange={(e) => setPhone(e.target.value)} value={phone} required />
                         <input type="email" className="form-control my-2" placeholder='Email' name='email' onChange={(e) => setEmail(e.target.value)} value={email} />
-                        <textarea cols="30" rows="5" className="form-control my-2" name='query' onChange={(e) => setQuery(e.target.value)} value={query} placeholder='Write Your Query . . .' required autoFocus></textarea>
+                        <textarea cols="30" rows="5" className="form-control my-2" name='query' onChange={(e) => setQuery(e.target.value)} value={query} placeholder='Write Your Query . . .' required></textarea>
                     </div>
 
                     <div className="mx-4 mb-4">
