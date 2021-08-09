@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import PageHandler from './PageHandler';
+import Recipes from './Recipes';
+import pageHandler from './PageHandler';
 
 const ReducerList = combineReducers({
-    PageHandler
+    Recipes, pageHandler
 });
 
 export default ReducerList;

@@ -1,8 +1,8 @@
-const PageHandler = (pageData = 0, action) =>{
+const pageHandler = (page = {'search' : '', 'restrict' : ''}, action) => {
     switch(action.type){
         case 'CURRENT_PAGE' : return action.payload;
-        default : return pageData;
+        default : return page;
     }
 }
 
-export default PageHandler;
+export default pageHandler;
