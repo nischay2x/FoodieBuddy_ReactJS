@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/static/js/main.fba986e7.chunk.js",
+    "main.js.map": "/static/js/main.fba986e7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.03887cff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.03887cff.js.map",
+    "static/css/2.27dd871e.chunk.css": "/static/css/2.27dd871e.chunk.css",
+    "static/js/2.5fda6c9d.chunk.js": "/static/js/2.5fda6c9d.chunk.js",
+    "static/js/2.5fda6c9d.chunk.js.map": "/static/js/2.5fda6c9d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.27dd871e.chunk.css.map": "/static/css/2.27dd871e.chunk.css.map",
+    "static/js/2.5fda6c9d.chunk.js.LICENSE.txt": "/static/js/2.5fda6c9d.chunk.js.LICENSE.txt",
+    "static/media/AmericanCuisine.6c3ec930.jpg": "/static/media/AmericanCuisine.6c3ec930.jpg",
+    "static/media/Breakfast.2c4c4e48.jpg": "/static/media/Breakfast.2c4c4e48.jpg",
+    "static/media/ChineseCuisine.de6e7c5f.jpg": "/static/media/ChineseCuisine.de6e7c5f.jpg",
+    "static/media/Dinner.ef763124.jpg": "/static/media/Dinner.ef763124.jpg",
+    "static/media/FrenchCuisine.ffec5ae0.jpg": "/static/media/FrenchCuisine.ffec5ae0.jpg",
+    "static/media/IndianCuisine.da957569.jpg": "/static/media/IndianCuisine.da957569.jpg",
+    "static/media/ItalianCuisine.ed9311aa.jpg": "/static/media/ItalianCuisine.ed9311aa.jpg",
+    "static/media/Lunch.187ffc97.jpg": "/static/media/Lunch.187ffc97.jpg",
+    "static/media/MexicanCuisine.ab4b433f.jpg": "/static/media/MexicanCuisine.ab4b433f.jpg",
+    "static/media/MidEast.ac83d78e.png": "/static/media/MidEast.ac83d78e.png",
+    "static/media/Snack.f1e9bd30.jpg": "/static/media/Snack.f1e9bd30.jpg",
+    "static/media/ThaiCuisine.59bdf686.jpg": "/static/media/ThaiCuisine.59bdf686.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03887cff.js",
+    "static/css/2.27dd871e.chunk.css",
+    "static/js/2.5fda6c9d.chunk.js",
+    "static/js/main.fba986e7.chunk.js"
+  ]
+}
